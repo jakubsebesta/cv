@@ -159,8 +159,8 @@ a {
 }
 
 body {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.4))), url("../img/mac.jpg") center center no-repeat;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("../img/mac.jpg") center center no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(52, 52, 52, 0.65))), url("../img/mac.jpg") center center no-repeat;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(52, 52, 52, 0.65)), url("../img/mac.jpg") center center no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -193,10 +193,10 @@ body {
   width: 70%;
   margin: 0 auto;
   text-align: center;
-  background: rgba(64, 64, 79, 0.85);
+  background: rgba(30, 30, 37, 0.85);
   border-radius: 0.625em;
-  -webkit-box-shadow: 1px 1px 5px #40404f;
-          box-shadow: 1px 1px 5px #40404f;
+  -webkit-box-shadow: 1px 1px 4px #0DBBA0;
+          box-shadow: 1px 1px 4px #0DBBA0;
   padding: 1.875em;
   position: absolute;
 }
@@ -212,8 +212,8 @@ body {
   color: #E8E7E8;
   font-size: 1.875em;
   text-transform: capitalize;
-  background: #0DBBA0;
-  border-radius: .5em .5em .5em 0;
+  border-bottom: 3px solid #0DBBA0;
+  border-radius: .5em 0 .5em 0;
   padding-left: .5em;
 }
 

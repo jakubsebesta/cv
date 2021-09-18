@@ -103,7 +103,7 @@
 }
 
 body{
-    background:linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url('../img/mac.jpg') center center no-repeat;
+    background:linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(52, 52, 52, 0.65)), url('../img/mac.jpg') center center no-repeat;
     background-size: cover;
     background-attachment: fixed;
 
@@ -144,7 +144,7 @@ body{
     text-align: center;
     background: transparentize($color-primary, .15);
     border-radius: em(10);
-    box-shadow: 1px 1px 5px $color-primary;
+    box-shadow: 1px 1px 4px $color-secondary;
     padding: em(30);
     position: absolute;
     
@@ -160,8 +160,8 @@ body{
         color: $color-text;
         font-size: em(30);
         text-transform: capitalize;
-        background: $color-secondary;
-        border-radius: .5em .5em .5em 0;
+        border-bottom: 3px solid $color-secondary;
+        border-radius: .5em 0 .5em 0;
         padding-left: .5em;
     }
     
