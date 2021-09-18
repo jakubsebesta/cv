@@ -1,0 +1,41 @@
+@mixin centerer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @mixin navLinks{
+    
+      font-size: em(25);
+      color: $color-text;
+      text-transform: uppercase;
+      transition: .2s all ease;
+      text-shadow: 1px 1px 1px;
+
+      &:hover{
+          color: lighten($color-secondary, 5%);
+          text-shadow: 1px 1px 5px;
+          
+      }
+  }
+
+  @mixin circleBtn{
+
+    
+    background: $color-secondary;
+    border-radius: 50%;
+    border: none;
+    color: $color-text; 
+    box-shadow: 1px 1px 10px lighten($color-secondary, 30%);  
+    cursor: pointer;
+    transition: all .3s linear;
+
+    &:hover,
+    &:focus{
+        background: lighten($color-secondary, 10%);
+        box-shadow: 1px 1px 30px lighten($color-secondary, 30%);
+        
+    }
+
+  }

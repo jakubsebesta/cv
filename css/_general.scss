@@ -1,0 +1,30 @@
+
+html{
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    font-size: 100%;
+    max-width:1500px;
+    line-height: 1.5;
+    margin: 0 auto;
+    font-family: lato;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+a{
+    text-decoration: none;
+}

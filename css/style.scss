@@ -1,0 +1,288 @@
+@import 'general';
+@import 'variables';
+@import 'debug';
+@import 'functions';
+@import 'mixins';
+
+
+.navigation{
+    display: flex;
+    justify-content: center;
+    @media (max-width: $size-s){
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
+
+.mobile-navigation,
+.desktop-navigation{
+    li{
+        list-style-type: none;
+    }
+
+}
+
+
+.desktop-navigation{
+
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+
+    li:not(:first-child){
+        margin-left: em(30);
+        
+    }
+
+    a{
+        @include navLinks;
+        
+    }
+
+    @media (max-width: $size-s){
+
+        display: none;
+    }
+}
+
+.mobile-navigation{
+    display: flex;
+    display: none;
+    flex-direction: column;
+    font-size: .85em;
+    text-transform: capitalize;
+    border-radius: .5em;
+    padding-left: 0;
+    margin-left: 1em;
+    
+    @media(max-width:$size-s){
+
+        display: none;
+    }
+     
+    a{
+        @include navLinks;
+        font-size: 120%;
+    }
+
+}
+
+.menu-container{
+
+    display: block;
+    
+    
+    
+    z-index: 10;
+
+    @media(min-width: $size-s){
+
+       display: none;
+    }
+}
+
+
+.hamburger{
+    display: none;
+    padding: 1em;
+    margin-top: 1em;
+    margin-left: 1em;
+    border-radius: .4em;
+    border: none;
+    background: $color-secondary;
+    color: $color-text;
+    &:hover{
+        cursor: pointer;
+        
+    }
+
+    @media (max-width: $size-s) {
+        display: block;
+
+    }
+}
+
+body{
+    background:linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url('../img/mac.jpg') center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    @media(max-width: $size-s) {
+        background:linear-gradient(to bottom, rgba(0, 0, 0, 0.85), rgba(75, 75, 75, 0.85)), url('../img/dennis-brendel-X4lz5jSYOGw-unsplash.jpg') center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+        
+    }
+}
+
+
+.background{
+    overflow: hidden;
+    
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+    position: relative;
+
+    
+
+    @media (max-width:$size-xs){
+
+
+        
+    }
+    
+     
+}
+
+.window{
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    background: transparentize($color-primary, .15);
+    border-radius: em(10);
+    box-shadow: 1px 1px 5px $color-primary;
+    padding: em(30);
+    position: absolute;
+    
+    
+    i{
+        font-size: em(38);
+        padding: 0;
+        margin: 0;
+    }
+
+    h2{
+        text-align: start;
+        color: $color-text;
+        font-size: em(30);
+        text-transform: capitalize;
+        background: $color-secondary;
+        border-radius: .5em .5em .5em 0;
+        padding-left: .5em;
+    }
+    
+    p{
+        color: $color-text;
+        font-size: em(18);
+    }
+
+    @media(max-width: $size-s){
+        width: 90%;
+        top: 2.9em;
+    }
+}
+
+.selected{
+    a{
+        color: $color-secondary;
+    }
+}
+
+
+
+.entrance{
+
+    @include centerer;
+    @include circleBtn;
+    font-size: em(24); 
+    padding: em(60) em(40);
+    
+    
+
+    @media (max-width:$size-xs){
+
+        font-size: em(18);
+
+    }
+    
+       
+    
+}
+
+
+.close{
+    position: absolute;
+    top: 0em;
+    left: -0em;
+    padding: 1em 1.2em;
+    border-radius: 50%;
+    border: none;
+    background: rgba($color: #000000, $alpha: 0);
+    transition:all .3s linear;
+    color: $color-close;
+    &:hover{
+        cursor: pointer;
+        color: lighten($color-secondary, 20%);
+        
+    }
+}
+
+//icons
+
+.about{
+    color: $color-about;
+}
+
+.skills{
+    color:$color-skills;
+}
+
+.profile{
+    color:$color-profile;
+}
+
+.contact{
+    color: $color-contact;
+}
+
+.skill{
+    .border{
+        background:$color-empty-bar;
+        height: auto;
+        border-radius: .4em;
+        .bar{
+            background: $color-full-bar;
+            padding: .5em;
+            border-radius: .4em;
+            
+        }
+    }
+}
+
+.bar-headline{
+    color: $color-text;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: .35em;
+    margin-top: .35em;
+}
+
+#html{
+    width: 80%;
+}
+
+#css{
+    width: 75%;
+}
+
+#scss{
+    width: 70%;
+}
+
+#bootstrap{
+
+    width: 30%;
+
+}
+
+#git{
+    width: 60%;
+}
+
+#jquery{
+    width: 55%;
+}

@@ -1,0 +1,348 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-size: 100%;
+  max-width: 1500px;
+  line-height: 1.5;
+  margin: 0 auto;
+  font-family: lato;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .navigation {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+.mobile-navigation li,
+.desktop-navigation li {
+  list-style-type: none;
+}
+
+.desktop-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1em;
+}
+
+.desktop-navigation li:not(:first-child) {
+  margin-left: 1.875em;
+}
+
+.desktop-navigation a {
+  font-size: 1.5625em;
+  color: #E8E7E8;
+  text-transform: uppercase;
+  -webkit-transition: .2s all ease;
+  transition: .2s all ease;
+  text-shadow: 1px 1px 1px;
+}
+
+.desktop-navigation a:hover {
+  color: #0fd3b4;
+  text-shadow: 1px 1px 5px;
+}
+
+@media (max-width: 768px) {
+  .desktop-navigation {
+    display: none;
+  }
+}
+
+.mobile-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: .85em;
+  text-transform: capitalize;
+  border-radius: .5em;
+  padding-left: 0;
+  margin-left: 1em;
+}
+
+@media (max-width: 768px) {
+  .mobile-navigation {
+    display: none;
+  }
+}
+
+.mobile-navigation a {
+  font-size: 1.5625em;
+  color: #E8E7E8;
+  text-transform: uppercase;
+  -webkit-transition: .2s all ease;
+  transition: .2s all ease;
+  text-shadow: 1px 1px 1px;
+  font-size: 120%;
+}
+
+.mobile-navigation a:hover {
+  color: #0fd3b4;
+  text-shadow: 1px 1px 5px;
+}
+
+.menu-container {
+  display: block;
+  z-index: 10;
+}
+
+@media (min-width: 768px) {
+  .menu-container {
+    display: none;
+  }
+}
+
+.hamburger {
+  display: none;
+  padding: 1em;
+  margin-top: 1em;
+  margin-left: 1em;
+  border-radius: .4em;
+  border: none;
+  background: #0DBBA0;
+  color: #E8E7E8;
+}
+
+.hamburger:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+}
+
+body {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.4))), url("../img/mac.jpg") center center no-repeat;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url("../img/mac.jpg") center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@media (max-width: 768px) {
+  body {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.85)), to(rgba(75, 75, 75, 0.85))), url("../img/dennis-brendel-X4lz5jSYOGw-unsplash.jpg") center center no-repeat;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), rgba(75, 75, 75, 0.85)), url("../img/dennis-brendel-X4lz5jSYOGw-unsplash.jpg") center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
+
+.background {
+  overflow: hidden;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 3em;
+  position: relative;
+}
+
+.window {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  background: rgba(64, 64, 79, 0.85);
+  border-radius: 0.625em;
+  -webkit-box-shadow: 1px 1px 5px #40404f;
+          box-shadow: 1px 1px 5px #40404f;
+  padding: 1.875em;
+  position: absolute;
+}
+
+.window i {
+  font-size: 2.375em;
+  padding: 0;
+  margin: 0;
+}
+
+.window h2 {
+  text-align: start;
+  color: #E8E7E8;
+  font-size: 1.875em;
+  text-transform: capitalize;
+  background: #0DBBA0;
+  border-radius: .5em .5em .5em 0;
+  padding-left: .5em;
+}
+
+.window p {
+  color: #E8E7E8;
+  font-size: 1.125em;
+}
+
+@media (max-width: 768px) {
+  .window {
+    width: 90%;
+    top: 2.9em;
+  }
+}
+
+.selected a {
+  color: #0DBBA0;
+}
+
+.entrance {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: #0DBBA0;
+  border-radius: 50%;
+  border: none;
+  color: #E8E7E8;
+  -webkit-box-shadow: 1px 1px 10px #6cf5e0;
+          box-shadow: 1px 1px 10px #6cf5e0;
+  cursor: pointer;
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+  font-size: 1.5em;
+  padding: 3.75em 2.5em;
+}
+
+.entrance:hover, .entrance:focus {
+  background: #10ebc9;
+  -webkit-box-shadow: 1px 1px 30px #6cf5e0;
+          box-shadow: 1px 1px 30px #6cf5e0;
+}
+
+@media (max-width: 480px) {
+  .entrance {
+    font-size: 1.125em;
+  }
+}
+
+.close {
+  position: absolute;
+  top: 0em;
+  left: -0em;
+  padding: 1em 1.2em;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0, 0, 0, 0);
+  -webkit-transition: all .3s linear;
+  transition: all .3s linear;
+  color: #0DBBA0;
+}
+
+.close:hover {
+  cursor: pointer;
+  color: #3df1d5;
+}
+
+.about {
+  color: #0DBBA0;
+}
+
+.skills {
+  color: #D66850;
+}
+
+.profile {
+  color: #8A6AE3;
+}
+
+.contact {
+  color: #2589CE;
+}
+
+.skill .border {
+  background: #737276;
+  height: auto;
+  border-radius: .4em;
+}
+
+.skill .border .bar {
+  background: #0DBBA0;
+  padding: .5em;
+  border-radius: .4em;
+}
+
+.bar-headline {
+  color: #E8E7E8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: .35em;
+  margin-top: .35em;
+}
+
+#html {
+  width: 80%;
+}
+
+#css {
+  width: 75%;
+}
+
+#scss {
+  width: 70%;
+}
+
+#bootstrap {
+  width: 30%;
+}
+
+#git {
+  width: 60%;
+}
+
+#jquery {
+  width: 55%;
+}
+/*# sourceMappingURL=style.css.map */
