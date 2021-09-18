@@ -144,7 +144,7 @@ a {
   margin-left: 1em;
   border-radius: .4em;
   border: none;
-  background: #0DBBA0;
+  background: #0dbba0;
   color: #E8E7E8;
 }
 
@@ -195,8 +195,8 @@ body {
   text-align: center;
   background: rgba(30, 30, 37, 0.85);
   border-radius: 0.625em;
-  -webkit-box-shadow: 1px 1px 4px #0DBBA0;
-          box-shadow: 1px 1px 4px #0DBBA0;
+  -webkit-box-shadow: 1px 1px 4px #0dbba0;
+          box-shadow: 1px 1px 4px #0dbba0;
   padding: 1.875em;
   position: absolute;
 }
@@ -212,9 +212,10 @@ body {
   color: #E8E7E8;
   font-size: 1.875em;
   text-transform: capitalize;
-  border-bottom: 3px solid #0DBBA0;
-  border-radius: .5em 0 .5em 0;
+  background: #0dbba0;
+  border-radius: .5em .5em .5em 0;
   padding-left: .5em;
+  padding-right: .5em;
 }
 
 .window p {
@@ -230,7 +231,7 @@ body {
 }
 
 .selected a {
-  color: #0DBBA0;
+  color: #0dbba0;
 }
 
 .entrance {
@@ -239,7 +240,7 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  background: #0DBBA0;
+  background: #0dbba0;
   border-radius: 50%;
   border: none;
   color: #E8E7E8;
@@ -274,7 +275,7 @@ body {
   background: rgba(0, 0, 0, 0);
   -webkit-transition: all .3s linear;
   transition: all .3s linear;
-  color: #0DBBA0;
+  color: #0dbba0;
 }
 
 .close:hover {
@@ -282,8 +283,13 @@ body {
   color: #3df1d5;
 }
 
+.fas {
+  position: relative;
+  top: .66em;
+}
+
 .about {
-  color: #0DBBA0;
+  color: #0dbba0;
 }
 
 .skills {
@@ -305,9 +311,22 @@ body {
 }
 
 .skill .border .bar {
-  background: #0DBBA0;
+  background: #0dbba0;
   padding: .5em;
   border-radius: .4em;
+}
+
+.bar-headline-percentage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.percentage {
+  color: #E8E7E8;
 }
 
 .bar-headline {
@@ -344,5 +363,18 @@ body {
 
 #jquery {
   width: 55%;
+}
+
+.headline-icon-handler {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=style.css.map */

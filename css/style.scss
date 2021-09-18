@@ -160,9 +160,10 @@ body{
         color: $color-text;
         font-size: em(30);
         text-transform: capitalize;
-        border-bottom: 3px solid $color-secondary;
-        border-radius: .5em 0 .5em 0;
+        background: $color-secondary;
+        border-radius: .5em .5em .5em 0;
         padding-left: .5em;
+        padding-right: .5em;
     }
     
     p{
@@ -223,6 +224,12 @@ body{
 
 //icons
 
+.fas{
+    position: relative;
+    top: .66em;
+
+}
+
 .about{
     color: $color-about;
 }
@@ -251,6 +258,15 @@ body{
             
         }
     }
+}
+
+.bar-headline-percentage{
+    display: flex;
+    justify-content: space-between;
+}
+
+.percentage{
+    color: $color-text;
 }
 
 .bar-headline{
@@ -285,4 +301,10 @@ body{
 
 #jquery{
     width: 55%;
+}
+
+.headline-icon-handler{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
 }
