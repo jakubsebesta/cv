@@ -341,27 +341,27 @@ body {
 }
 
 #html {
-  width: 80%;
+  width: 78%;
 }
 
 #css {
-  width: 75%;
+  width: 72%;
 }
 
 #scss {
-  width: 70%;
+  width: 66%;
 }
 
 #bootstrap {
-  width: 30%;
-}
-
-#git {
-  width: 60%;
+  width: 45%;
 }
 
 #jquery {
-  width: 55%;
+  width: 41%;
+}
+
+#git {
+  width: 68%;
 }
 
 .headline-icon-handler {
