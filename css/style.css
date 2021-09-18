@@ -226,7 +226,6 @@ body {
 @media (max-width: 768px) {
   .window {
     width: 90%;
-    top: 2.9em;
   }
 }
 

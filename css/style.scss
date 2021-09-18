@@ -126,16 +126,6 @@ body{
     justify-content: center;
     margin-top: 3em;
     position: relative;
-
-    
-
-    @media (max-width:$size-xs){
-
-
-        
-    }
-    
-     
 }
 
 .window{
@@ -173,7 +163,7 @@ body{
 
     @media(max-width: $size-s){
         width: 90%;
-        top: 2.9em;
+        
     }
 }
 
