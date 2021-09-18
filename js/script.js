@@ -1,9 +1,21 @@
 (function($){
 
+    
+    
+    
+    $(document).ajaxStart(function(){
+        console.log('zacinam nacitavat');
+        $('.loader').fadeIn(100);
+    });
+    
+    $(document).ajaxComplete(function(){
+        console.log('nacital som obsah');
+        $('.loader').fadeOut(150);
+
+    });
+
     $('.container').hide();
     
-
-
 var navigation = $('.desktop-navigation a, .mobile-navigation a'),
     selected = $('.desktop-navigation').find('.selected'),
     container = $('.container');

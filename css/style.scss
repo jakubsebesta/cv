@@ -299,3 +299,9 @@ body{
     flex-direction: row-reverse;
     justify-content: space-between;
 }
+
+.loader{
+    @include centerer;
+    z-index: 999;
+    
+}
