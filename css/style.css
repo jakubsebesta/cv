@@ -340,28 +340,8 @@ body {
   margin-top: .35em;
 }
 
-#html {
-  width: 78%;
-}
-
-#css {
-  width: 72%;
-}
-
-#scss {
-  width: 66%;
-}
-
-#bootstrap {
-  width: 45%;
-}
-
-#jquery {
-  width: 41%;
-}
-
-#git {
-  width: 68%;
+#html, #css, #scss, #bootstrap, #git, #jquery {
+  width: 0;
 }
 
 .headline-icon-handler {
