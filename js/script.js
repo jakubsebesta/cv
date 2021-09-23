@@ -1,7 +1,5 @@
 (function($){
-
-    
-    
+ 
     
     $(document).ajaxStart(function(){
         console.log('zacinam nacitavat');
@@ -13,6 +11,8 @@
         $('.loader').fadeOut(150);
 
     });
+
+    
 
     $('.container').hide();
     
@@ -53,9 +53,7 @@ navigation.on('click', function(event){
             
         });
 
-
      });
-
 
 });
 
