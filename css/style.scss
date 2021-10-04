@@ -267,8 +267,9 @@ body{
     margin-top: .35em;
 }
 
-#html,#css, #scss, #bootstrap, #git, #jquery{
+.bar{
     width: 0;
+    transition: 1.3s linear;
 }
 
 

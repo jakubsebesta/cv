@@ -1,24 +1,28 @@
 (function($){
- 
+    
+    var loader = $('.loader');
     
     $(document).ajaxStart(function(){
-        console.log('zacinam nacitavat');
-        $('.loader').fadeIn(100);
+        loader.fadeIn(100);
     });
     
     $(document).ajaxComplete(function(){
-        console.log('nacital som obsah');
-        $('.loader').fadeOut(150);
-        $('#html').animate({width:'78%'}, 1500);
-        $('#css').animate({width:'72%'}, 1500);
-        $('#scss').animate({width:'66%'}, 1500);
-        $('#bootstrap').animate({width:'45%'}, 1500);
-        $('#jquery').animate({width:'41%'}, 1500);
-        $('#git').animate({width:'68%'}, 1500);
 
+        loader.fadeOut(150);
+
+        // animujem skill bars
+        $('.bar').each(function(){
+            let per = $(this).attr('per');
+
+            $(this).css("width", per+'%');
+            $({animatedValue: 0}).animate({animatedValue: per});
+
+        });
+
+        
     });
 
-    $('.percentage').animate({width:'70%'}, 1500);
+    
     
 
     $('.container').hide();

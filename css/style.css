@@ -340,8 +340,10 @@ body {
   margin-top: .35em;
 }
 
-#html, #css, #scss, #bootstrap, #git, #jquery {
+.bar {
   width: 0;
+  -webkit-transition: 1.3s linear;
+  transition: 1.3s linear;
 }
 
 .headline-icon-handler {
