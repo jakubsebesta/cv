@@ -68,8 +68,6 @@ navigation.on('click', function(event){
 
 });
 
-
-
 function loadContent(){
 
     $.ajax({
@@ -82,7 +80,6 @@ function loadContent(){
     });
 
 };
-
 
 $('.entrance').on('click', function(event){
 
@@ -105,12 +102,8 @@ $('body').on('click','.close',  function(event){
 var  menu = $('.mobile-navigation'),
      hamburger = $('.hamburger');
     
-
-    
-
     $('body').on('click', '.hamburger', function(event){
-
-        
+  
         event.preventDefault();
 
         if(menu.css('display') == 'none'){

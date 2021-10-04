@@ -75,7 +75,6 @@ a {
   text-transform: uppercase;
   -webkit-transition: .2s all ease;
   transition: .2s all ease;
-  text-shadow: 1px 1px 1px;
 }
 
 .desktop-navigation a:hover {
@@ -117,7 +116,6 @@ a {
   text-transform: uppercase;
   -webkit-transition: .2s all ease;
   transition: .2s all ease;
-  text-shadow: 1px 1px 1px;
   font-size: 120%;
 }
 
@@ -195,8 +193,8 @@ body {
   text-align: center;
   background: rgba(30, 30, 37, 0.85);
   border-radius: 0.625em;
-  -webkit-box-shadow: 1px 1px 4px #0dbba0;
-          box-shadow: 1px 1px 4px #0dbba0;
+  -webkit-box-shadow: 0px 0px 15px #0dbba0;
+          box-shadow: 0px 0px 15px #0dbba0;
   padding: 1.875em;
   position: absolute;
 }
