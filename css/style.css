@@ -411,4 +411,13 @@ hr {
     margin-top: .6em;
   }
 }
+
+#profile {
+  text-align: start;
+  color: #E8E7E8;
+}
+
+#profile dt {
+  font-weight: 600;
+}
 /*# sourceMappingURL=style.css.map */
